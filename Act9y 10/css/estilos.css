@@ -1,0 +1,84 @@
+#menuPrincipal{
+	background-color: rgba(68, 19, 100, 0.76);
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 1;
+}
+.opcionMenuPrincipal{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 50px;
+	cursor: pointer;
+	position: relative;
+	font-size: 1.5rem;
+}
+   .opcionMenuPrincipal:hover{
+	background-color: rgba(208, 102, 235, 0.4);
+   }
+body{
+    background-color:rgb(3, 182, 128);
+    font-style: italic;
+    font-size: large;
+    
+}
+
+
+label input[type="text"]{
+    height:28px;
+    width:120px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:#075c07;
+    border-radius:10px;
+    display:block;
+}
+
+li input[type="text"]{
+    height:28px;
+    width:40px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:#075c07;
+    border-radius:10px;
+}
+
+.columna{
+    background-color: #0a7afa;
+    width:100px;
+    margin:0;
+}
+ul{
+    text-align: left;
+}
+div{
+    display: inline-flex;
+    text-align: right;
+    text-align: left;
+}
+.bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+
+  .barra1{
+    background-color: #b895fa;
+    text-align:center;
+}
+.barra2{
+    background-color: #ff4e89;
+    text-align:center;
+}
+
+.barra3{
+    background-color: #8fb0f8;
+    text-align:center;
+}
+.barra4{
+    background-color: #f88f94;
+    text-align:center;
+}

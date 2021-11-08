@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <link href="../img/cosmetic.jpg" rel="icon" sizes="50x50">
+    <title>Actividad 9 y 10</title>
+</head>
+<body>
+    <nav id="menuPrincipal">
+		<h1>
+			<a class="opcionMenuPrincipal" href="index.html">Fatima Monserrat Velazquez Zarate</a>
+		</h1>
+	</nav>
+    <header id="titulo" class=" text-center text-white">
+        <span class="h2"><br></span>
+    </header>
+    <section class="container text-center" id="cont">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+    <main>
+    <ul>
+        <br>
+        <br>
+        <header class="barra1">
+        <h1>Cosmeticos y mas</h1>
+        </header>
+        <div>
+        <h2>
+            <br>
+            <header class="barra2">
+            <p>Contamos con : 
+                Mascarillas, Rimel, Labiales, Sombras.</p>
+            </header>
+            
+        </h2>
+    </div>
+
+    <header class="barra3">
+        <hr size="8px" color="black" />
+        <li v-for="juego in mejoresJuegos">
+            Cosmeticos:{{juego.titulo}}
+            Se compone por :{{juego.genero}}.
+            Precio:{{juego.precio}}.
+            Tamaño:{{juego.tamaño}}.
+            <!---Imprimir el arreglo de datos-->
+        </li>
+    </header>
+    </ul>
+
+    
+    <header class="barra4">
+
+    <input type="range" min="10" max="25" v-model="minimo">
+    <input type="search" v-model="busqueda" placeholder="Ingresa cosmetico ">
+    <ul class="list unstyled text center">
+        <li v-for="juego in buscarJuego">
+            Cosmeticos:{{juego.titulo}}
+            Ingredientes:{{juego.genero}}.
+            Precio:{{juego.precio}}.
+            Tamaño:{{juego.tamaño}}.
+
+        </li>
+    </header>
+    </ul>
+    <pre></pre>
+    </main>
+    </section>
+
+
+    <script src="../js/VUE.js"></script>
+     <script src="../js/funciones.js"></script>    
+</body>
+</html>
